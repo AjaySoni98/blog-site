@@ -1,0 +1,116 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    color: lightgray;
+    background: radial-gradient(lightgray, black, black);
+    margin: 0;
+    padding: 0;
+    opacity: 30%;
+}
+
+:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: gray;
+}
+
+.home{
+    margin: 10pt 10pt 0pt 10pt;
+    border-radius: 5pt;
+    width: 40px;
+    height: 40px;
+}
+
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 627px;
+}
+
+#login-form{
+    visibility: hidden;
+    margin-left: 37%;
+}
+
+#signup-form{
+    visibility: hidden;
+    margin-left: 37%;
+}
+
+input{
+    border-radius: 5pt;
+    color: black;
+}
+
+button{
+    border-radius: 5pt;
+}
+
+.ip{
+    position: absolute;
+    margin-top: 10%;
+    margin-bottom: 10pt;
+    padding: 10pt 15pt 15pt 20pt;
+    border-radius: 5pt;
+    background-color: lightgray;
+}
+
+.ip>input{
+    width: 200pt;
+    height: 20pt;
+}
+
+.ip>button{
+    height: 27pt;
+}
+
+.ip>input,button{ 
+    font-family: 'Alata', sans-serif;
+    margin: 10pt 10pt 0pt 10pt;
+    padding: 5px 10px 5px 10px; 
+    border-width: 0px 0px 1px;
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+    border-color: black;
+    background: none;
+    font-size: 12pt;
+    display: block
+}
+
+.btn{
+    font-family: 'Alata', sans-serif;
+    margin: 10pt 10pt 0pt 10pt;
+    text-decoration: none;
+    border-radius: 5pt;
+    background:lightgray;
+    color:black;
+    float: right;
+    font-size: 12pt;
+    padding: 5px 10px 5px 10px;
+}
+
+.mbb{
+    background-image: url("babyyoda.jpg");
+}
+
+.doodle{
+    background-image: url("doodle.jpg");    
+}
+
+.lion{
+    position: relative;
+    background-image: url("mbb.jpg");    
+}
+
+.doodle-front{
+    background: url("doodle-front.png");
+}
