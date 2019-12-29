@@ -73,15 +73,9 @@ def login():
     else:
         return "failed"
 
-@app.route("/home")
+@app.route("/login-home")
 def home():
-    return render_template('home.html', posts=posts)
-
-
-@app.route("/about")
-def about():
-    return render_template('about.html', title='About')
-
+    return render_template('login-home.html', posts=posts)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -12,7 +12,6 @@
             <a href="/home"><img class="home" src="static\logo.png" alt=""></a>
             <a class="btn" href="#" onclick="signupFunc()">Sign Up</a>
             <a class="btn" href="#" onclick="loginFunc()">Login</a>
-            <hr>
             <div id="login-form">
                  <form class="ip" method="POST" action="/login" >
                     <input type="email" name = "email" placeholder="Email" required>
@@ -21,7 +20,7 @@
                 </form>
             </div>
             <div id="signup-form">
-                <form class="ip" method="POST, GET" action="#">
+                <form class="ip" method="POST" action="/signup">
                     <input type="text" name= "name" placeholder="Name" required>
                     <input type="text" name= "username" placeholder="Username" required>
                     <input type="email" name= "email" placeholder="Email" required>

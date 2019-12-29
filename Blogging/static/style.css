@@ -1,16 +1,11 @@
 body, html{
     margin: 0;
     padding: 0;
+    font-family: 'Alata', sans-serif;
 }
 
-hr{
-    border: none;
-    height: 1px;
-    color: lightgray;
-    background: radial-gradient(lightgray, black, black);
-    margin: 0;
-    padding: 0;
-    opacity: 30%;
+text{
+    font-family: 'Alata', sans-serif;
 }
 
 :focus{
@@ -22,10 +17,9 @@ hr{
 }
 
 .home{
-    margin: 10pt 10pt 0pt 10pt;
-    border-radius: 5pt;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    padding: 4pt 4pt 4pt 4pt;
+    margin: 12pt 0pt 0pt 20pt;
 }
 
 .parallax{
@@ -91,8 +85,8 @@ button{
     margin: 10pt 10pt 0pt 10pt;
     text-decoration: none;
     border-radius: 5pt;
-    background:lightgray;
-    color:black;
+    background:#003b59;
+    color:white;
     float: right;
     font-size: 12pt;
     padding: 5px 10px 5px 10px;
