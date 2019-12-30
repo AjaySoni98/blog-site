@@ -12,7 +12,7 @@ hr{
 
 a{
     text-decoration: none;
-    color: #003b59;
+    color: black;
 }
 
 ::placeholder{
@@ -20,15 +20,11 @@ a{
     font-family: 'Alata', sans-serif;
 }
 
-ul{
-    list-style: none;
-    display: block;
-}
-
 .navbar{
     background-color: #003b59;
     height: 50px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .navbar>a{
@@ -92,9 +88,9 @@ input:focus{
     border: 1px solid #003b59;
     border-radius: 5pt;
     text-align: center;
-    margin: 50px 20px 0px 0px;
+    margin: 0px 20px 0px 0px;
     position: relative;
-    background-color: lightgray;
+    background-color: rgb(248, 248, 248);
 }
 
 .comma{

@@ -67,7 +67,7 @@ def login():
         data = cur.fetchone()
         print(data[0])
         cur.close()
-        return render_template('home.html', userdata= posts)
+        return render_template('login-home.html', userdata= posts)
         
 
     else:

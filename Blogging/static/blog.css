@@ -1,0 +1,106 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.blog{
+    width: 700px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    margin: 10px 0px 10px 113px;
+    border-radius: 5px;
+}
+
+.blog>div{
+    display: inline-block;
+}
+
+.profilepic{
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    float: left;
+    background: url("alt.png");
+    background-size: cover;
+}
+
+.blogcontent{
+    width: 556px;
+    height: fit-content;
+    border-radius: 5px;
+    float: left;
+    margin-left: 40px;
+    background-color: rgb(248, 248, 248);
+}
+
+.blogtitle{
+    width: inherit;
+    min-height: 40px;
+    max-height: fit-content;
+    float: left;
+    border-bottom: 2px solid white;
+    position: relative;
+}
+
+.blogtitlee{
+    width: 380px;
+    font-size: 15pt;
+    margin: 10px 10px 10px 10px;
+    float: left;
+}
+
+.uname{
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    color: #003b59;
+    text-decoration-line: underline;
+}
+
+.datetime>p{
+    font-size: 7pt;
+    margin: 5px 12px 10px 0px;
+    float: right;
+}
+
+.oimage{
+    width: 96%;
+    height: 96%;
+    margin: auto;
+}
+
+.bimage>img{
+    content: url("babyyoda.jpg");
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.ovidz{
+    width: 96%;
+    height: 96%;
+    margin: auto;
+}
+
+.bvidz>video{
+    content: url("babyyoda.jpg");
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.otext{
+    width: 96%;
+    height: 96%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.btext>p{
+    margin: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
