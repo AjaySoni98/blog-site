@@ -1,26 +1,23 @@
 {% extends 'navbar.html' %}
 {% block blogsfeed %}
-<div class="blog">
+{% for item in data %}
+<div class="blog" id="blur2" style="margin-bottom: 40px;">
     <div class="profilepic"></div>
     <div class="blogcontent">
         <div class="blogtitle">
-            <p class="blogtitlee" align="justify">New samsung galaxy s10</p class="blogtitlee">
+            <p class="blogtitlee" align="justify">{{ item[0] }}</p>
             <a class="uname" href="#">username</a>
+            <div class="datetime"><p>{{ item[3] }}</p></div>
         </div>
-        <div class="datetime"><p>30th Dec, 2019</p></div>
-        <div class="oimage">
-            <div class="bimage"><img></div>
-        </div>
-        <div class="ovidz">
-            <div class="bvidz">
-                <video controls>
-                    <source src="static\video.mp4">
-                </video>
+        <div class="ekdiv">
+            <div class="oimage">
+                <div class="bimage"><img src="{{ item[2] }}"></div>
             </div>
-        </div>
-        <div class="otext">
-            <div class="btext"><p align="justify">aaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa bbbbbbbbbbbbb cccccccccc</p></div>
+            <div class="otext">
+                <div class="btext"><p align="justify">{{ item[1] }}</p></div>
+            </div>
         </div>
     </div>
 </div>
+{% endfor %}
 {% endblock %}

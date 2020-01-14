@@ -97,3 +97,7 @@ input:focus{
     position: relative;
     margin: 5px 0px 5px 0px;
 }
+
+button:hover{
+    cursor: pointer;
+}

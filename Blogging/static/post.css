@@ -1,0 +1,119 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+input:focus,::placeholder{
+    outline: none;
+    font-family: 'Alata', sans-serif;
+}
+
+textarea{
+    outline: none;
+    font-family: 'Alata', sans-serif;
+}
+
+.postbox{
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: fit-content;
+    margin: auto;   
+    margin-left: 28%;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    background-color: white;
+    transform: scale(0);
+    transition: 0.3s;
+}
+
+.postbox1{
+    transform: scale(1);
+    visibility: visible;
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: fit-content;
+    margin: auto;   
+    margin-left: 28%;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.posttitle{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    border-bottom: 1px solid rgb(220, 220, 220);   
+}
+
+.posttitle>.title{
+    width: 100%;
+    height: fit-content;
+    margin: 5px 10px 5px 10px;
+}
+
+.posttitle>.titleinp>input{
+    width: 97%;
+    height: 30px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 0px 10px 10px 10px; 
+}
+
+.desc{
+    width: 100%;
+    height: fit-content;
+    margin: auto;  
+    border-bottom: 1px solid rgb(220, 220, 220); 
+}
+
+.desc>.desctitle{
+    width: 100%;
+    height: fit-content;
+    margin: 5px 10px 5px 10px;  
+}
+
+.desc>.descinp>textarea{
+    width: 97%;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    margin: 0px 10px 10px 10px; 
+}
+
+.postimage{
+    width: 100%;
+    height: fit-content;
+    margin: auto;   
+}
+
+.postimage>.imagetitle{
+    height: fit-content;
+    margin: 5px 10px 5px 10px;
+}
+
+.postimage>.left>.imageinp>input{
+    margin-top: 7px;
+}
+
+.postimage>.left{
+    margin: 10px;
+    float: left;
+}
+
+.postimage>div>button{
+    margin: 33px 10px 0px 0px;
+    float: right;
+    font-family: 'Alata', sans-serif;
+    width: 50px;
+    background:#003b59;
+    color:white;
+    font-size: 12pt;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}

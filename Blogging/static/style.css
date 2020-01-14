@@ -27,7 +27,7 @@ text{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 627px;
+    height: 625px;
 }
 
 #login-form{
@@ -37,6 +37,7 @@ text{
 
 #signup-form{
     visibility: hidden;
+    top: 0;
     margin-left: 37%;
 }
 
@@ -51,7 +52,7 @@ button{
 
 .ip{
     position: absolute;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-bottom: 10pt;
     padding: 10pt 15pt 15pt 20pt;
     border-radius: 5pt;
@@ -92,19 +93,11 @@ button{
     padding: 5px 10px 5px 10px;
 }
 
+.btn:hover{
+    cursor: pointer;
+}
+
 .mbb{
     background-image: url("babyyoda.jpg");
-}
-
-.doodle{
-    background-image: url("doodle.jpg");    
-}
-
-.lion{
-    position: relative;
-    background-image: url("mbb.jpg");    
-}
-
-.doodle-front{
-    background: url("doodle-front.png");
+    background-size: cover;
 }

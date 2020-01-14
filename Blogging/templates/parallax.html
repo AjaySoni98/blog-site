@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="parallax lion" id="lion">
+        <div class="parallax mbb" id="lion">
             <a href="/home"><img class="home" src="static\logo.png" alt=""></a>
             <a class="btn" href="#" onclick="signupFunc()">Sign Up</a>
             <a class="btn" href="#" onclick="loginFunc()">Login</a>
@@ -25,13 +25,12 @@
                     <input type="text" name= "username" placeholder="Username" required>
                     <input type="email" name= "email" placeholder="Email" required>
                     <input type="password" name= "password" placeholder="Password" required>
-                    <input type="password" name= "confpassword" placeholder="Confirm Password" required>
+                    <input type="password" name= "confpassword" placeholder="Confirm Password" required style="margin-bottom: 20px;">
+                    <label style="margin: 0px 0px 0px 13px;" for="profilepic">Choose Profile Picture</label>
+                    <input type="file" name="profilepic" required>
                     <button type="submit" class="btn">Sign Up</button>
                 </form>
             </div>
-            
         </div>
-        <div class="parallax mbb"></div>
-        <div class="parallax doodle"></div>
     </body>
 </html>

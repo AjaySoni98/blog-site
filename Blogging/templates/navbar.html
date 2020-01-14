@@ -3,11 +3,13 @@
         <title>Home</title>
         <link rel="stylesheet" href="static\main.css">
         <link rel="stylesheet" href="static\blog.css">
+        <link rel="stylesheet" href="static\post.css">
+        <script type = "text/javascript" src = "{{ url_for('static', filename = 'main.js') }}" ></script>
         <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar" id="blur">
             <a href="/login-home">
                 <img id="logo" src="static\logo.png">
             </a>
@@ -15,19 +17,37 @@
                 <input type="search" placeholder="      Search Blogs here.....">
             </div>
             <div class="sabtns">
-                <a href="/login-home"><img class="navbtns" src="static\home.png"></a>
-                <a href="#"><img class="navbtns" src="static\explore.png"></a>
-                <a href="#"><img class="navbtns" src="static\post.png"></a>
+                <a href="/login-home"><img class="navbtns" src="static\explore.png"></a>
+                <a href="#"><img onclick="newPost()" class="navbtns" src="static\post.png"></a>
                 <a href="#"><img class="navbtns" src="static\info.png"></a>
                 <a href="#"><img class="navbtns" src="static\account.png"></a>
                 <a href="#"><img class="navbtns" src="static\logout.png"></a>
             </div>
         </div>
-        <div class="communities">
+        <div class="communities" id="blur1">
             <div class="comma"><a href="#">Public Community</a></div>
             <hr>
             <div class="comma"><a href="#">HOD Community</a></div>
         </div>
+        <form action="/post" method="POST" enctype="multipart/form-data">
+            <div class="postbox" id="post">
+                <div class="posttitle">
+                    <div class="title"><p style="font-size: 15pt; margin: 0;">Title</p></div>
+                    <div class="titleinp"><input name="post-title" type="text" placeholder="Post title here...."></div>
+                </div>
+                <div class="desc">
+                    <div class="desctitle"><p style="font-size: 15pt; margin: 0;">Description</p></div>
+                    <div class="descinp"><textarea name="post-desc" placeholder="Post description here..." cols="30" rows="10"></textarea></div>
+                </div>
+                <div class="postimage">
+                    <div class="left">
+                        <div class="imagetitle"><p style="font-size: 15pt; margin: 0;">Choose Image</p></div>
+                        <div class="imageinp"><input name="post-image" type="file" placeholder="Post title here...."></div>
+                    </div>
+                    <div><button onclick="deblur()" type="submit">Post</button></div>
+                </div>
+            </div>
+        </form>
         {% block blogsfeed %}{% endblock %}
     </body>
 </html>
